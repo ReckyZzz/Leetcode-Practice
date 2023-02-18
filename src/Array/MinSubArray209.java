@@ -1,6 +1,7 @@
 package Array;
 
 public class MinSubArray209 {
+    //数组部分第4题
     //209.给定一个含有 n 个正整数的数组和一个正整数 target 。
     //找出该数组中满足其和 ≥ target 的长度最小的 连续子数组，并返回其长度，若不存在符合条件的子数组，返回0
     int minSubArray(int target, int[] nums){
@@ -10,8 +11,11 @@ public class MinSubArray209 {
         for (int left = 0,right = 0; right < nums.length; right++){
             sum += nums[right];
             //当元素总和大于等于目标值时，移动窗口左端
+            //使用while是因为可能会移除多个元素
             while (sum >= target){
+                //当前区间res和最小区间进行比较，取最小
                 res = Math.min((right - left + 1), res);
+                //区间向右移动，left++，同时把最左端元素删除
                 sum -= nums[left];
                 left++;
             }

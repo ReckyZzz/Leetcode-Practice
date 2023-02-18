@@ -1,7 +1,8 @@
 package Array;
 
 public class BinarySearch704 {
-    //给定一个 n 个元素有序的（升序）整型数组 nums 和一个目标值 target
+    //数组部分第1题
+    //704.给定一个 n 个元素有序的（升序）整型数组 nums 和一个目标值 target
     //写一个函数搜索 nums 中的 target，如果目标值存在返回下标，否则返回 -1
     public int mySearch(int[] nums, int target){
         int left = 0, right = nums.length;//左闭右开
@@ -23,8 +24,10 @@ public class BinarySearch704 {
         }
     }
 
-    public int searchRightClosed(int[] nums, int target){//根据左闭右闭的原则来写
-        int left = 0, right = nums.length - 1,mid;//左闭右闭
+    //根据左闭右闭的原则来写
+    public int searchRightClosed(int[] nums, int target){
+        //左闭右闭
+        int left = 0, right = nums.length - 1, mid;
         while(left <= right){
             //left=right是合法区间，需要进行搜索
             mid = (left + right) / 2;
@@ -43,8 +46,10 @@ public class BinarySearch704 {
         return -1;
     }
 
-    public int searchRightOpen(int[] nums, int target){//根据左闭右开的原则来写
-        int left = 0, right = nums.length,mid;//左闭右开
+    //根据左闭右开的原则来写
+    public int searchRightOpen(int[] nums, int target){
+        //左闭右开
+        int left = 0, right = nums.length,mid;
         while(left < right){
             //left=right不是合法区间，不进行搜索
             mid = (left + right) / 2;

@@ -3,7 +3,8 @@ package Array;
 import java.util.Arrays;
 
 public class RemoveElement27 {
-    //给你一个数组 nums和一个值 val，你需要 原地 移除所有数值等于val的元素，并返回移除后数组的新长度。
+    //数组部分第2题
+    //27.给你一个数组 nums和一个值 val，你需要 原地 移除所有数值等于val的元素，并返回移除后数组的新长度。
     //不要使用额外的数组空间，你必须仅使用 O(1) 额外空间并 原地 修改输入数组。
     //元素的顺序可以改变。你不需要考虑数组中超出新长度后面的元素。
 
@@ -14,8 +15,9 @@ public class RemoveElement27 {
         for(int i = 0; i < size; i++){
             if(nums[i] == val){
                 for(int j = i + 1; j < size; j++){
-                    nums[j-1] = nums[j];
+                    nums[j - 1] = nums[j];
                 }
+                //找到指定元素之后，所有元素向前移动一位，数组大小减1，i也需要回到前1个位置
                 size--;
                 i--;
             }
