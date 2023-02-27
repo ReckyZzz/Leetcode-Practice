@@ -1,7 +1,5 @@
 package LinkedList;
 
-import java.util.List;
-
 public class DesignList707 {
     /**链表部分第2题
      * 设计链表的实现

@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="948e880a-cd7f-4ad8-82ea-89e0bc1199ed" name="Changes" comment="注释部分完善">
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/DesignList707.java" afterDir="false" />
+    <list default="true" id="948e880a-cd7f-4ad8-82ea-89e0bc1199ed" name="Changes" comment="链表第二题完成：设计链表707">
+      <change afterPath="$PROJECT_DIR$/src/LinkedList/DeleteLastNth19.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LinkedList/ReverseList206.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LinkedList/SwapPairs24.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/DesignList707.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/DesignList707.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,13 +40,26 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.RemoveElement27">
+  <component name="RunManager" selected="Application.DeleteLastNth19">
     <configuration name="BinarySearch704" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Array.BinarySearch704" />
       <module name="LeetCode practice" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeleteLastNth19" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LinkedList.DeleteLastNth19" />
+      <module name="LeetCode practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LinkedList.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -64,8 +80,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReverseList206" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LinkedList.ReverseList206" />
+      <module name="LeetCode practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LinkedList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SwapPairs24" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LinkedList.SwapPairs24" />
+      <module name="LeetCode practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LinkedList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DeleteLastNth19" />
+        <item itemvalue="Application.SwapPairs24" />
+        <item itemvalue="Application.ReverseList206" />
         <item itemvalue="Application.RemoveElement27" />
         <item itemvalue="Application.BinarySearch704" />
       </list>
@@ -82,7 +127,9 @@
       <workItem from="1676704776806" duration="572000" />
       <workItem from="1676705463850" duration="18000" />
       <workItem from="1676706106342" duration="1124000" />
-      <workItem from="1676894646875" duration="4839000" />
+      <workItem from="1676894646875" duration="4998000" />
+      <workItem from="1677487389824" duration="228000" />
+      <workItem from="1677497296650" duration="5653000" />
     </task>
     <task id="LOCAL-00001" summary="第一次commit">
       <created>1676704997666</created>
@@ -119,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676706365930</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="链表第二题完成：设计链表707">
+      <created>1676900151675</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676900151675</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +194,7 @@
     <MESSAGE value="第一次commit" />
     <MESSAGE value="第二次commit" />
     <MESSAGE value="配置文件提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="配置文件提交" />
+    <MESSAGE value="链表第二题完成：设计链表707" />
+    <option name="LAST_COMMIT_MESSAGE" value="链表第二题完成：设计链表707" />
   </component>
 </project>
