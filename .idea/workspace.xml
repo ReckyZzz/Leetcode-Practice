@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="948e880a-cd7f-4ad8-82ea-89e0bc1199ed" name="Changes" comment="链表第二题完成：设计链表707">
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/DeleteLastNth19.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/ReverseList206.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/SwapPairs24.java" afterDir="false" />
+    <list default="true" id="948e880a-cd7f-4ad8-82ea-89e0bc1199ed" name="Changes" comment="链表第三、四、五题完成">
+      <change afterPath="$PROJECT_DIR$/src/HashTable/Anagram242.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HashTable/ArrayIntersect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LinkedList/CycleList142.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LinkedList/DesignList707.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/DesignList707.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,16 +36,17 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Idea Projects/JavaSEPractice&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.DeleteLastNth19">
-    <configuration name="BinarySearch704" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Array.BinarySearch704" />
+  <component name="RunManager" selected="Application.ArrayIntersect">
+    <configuration name="ArrayIntersect" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HashTable.ArrayIntersect" />
       <module name="LeetCode practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Array.*" />
+          <option name="PATTERN" value="HashTable.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,11 +108,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ArrayIntersect" />
         <item itemvalue="Application.DeleteLastNth19" />
         <item itemvalue="Application.SwapPairs24" />
         <item itemvalue="Application.ReverseList206" />
         <item itemvalue="Application.RemoveElement27" />
-        <item itemvalue="Application.BinarySearch704" />
       </list>
     </recent_temporary>
   </component>
@@ -129,7 +129,9 @@
       <workItem from="1676706106342" duration="1124000" />
       <workItem from="1676894646875" duration="4998000" />
       <workItem from="1677487389824" duration="228000" />
-      <workItem from="1677497296650" duration="5653000" />
+      <workItem from="1677497296650" duration="6321000" />
+      <workItem from="1677585261076" duration="1241000" />
+      <workItem from="1677672631671" duration="4294000" />
     </task>
     <task id="LOCAL-00001" summary="第一次commit">
       <created>1676704997666</created>
@@ -173,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676900151675</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="链表第三、四、五题完成">
+      <created>1677504831325</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1677504831325</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +204,7 @@
     <MESSAGE value="第二次commit" />
     <MESSAGE value="配置文件提交" />
     <MESSAGE value="链表第二题完成：设计链表707" />
-    <option name="LAST_COMMIT_MESSAGE" value="链表第二题完成：设计链表707" />
+    <MESSAGE value="链表第三、四、五题完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="链表第三、四、五题完成" />
   </component>
 </project>
