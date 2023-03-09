@@ -14,8 +14,8 @@ public class Anagram242 {
         for (int i = 0; i < t.length(); i++){
             hashTable[t.charAt(i) - 'a'] -= 1;
         }
-        for (int index : hashTable){
-            if (index != 0){
+        for (int item : hashTable){
+            if (item != 0){
                 return false;
             }
         }
