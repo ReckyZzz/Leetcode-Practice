@@ -14,6 +14,7 @@ public class TripleSum15 {
     public List<List<Integer>> threeSum(int[] nums) {
         //关键在于不重复，需要去重，a+b+c=0
         //使用双指针而不使用哈希表,left为index+1，right为数组末尾
+        //先对数组进行排序
         Arrays.sort(nums);
         List<List<Integer>> res = new ArrayList<>();
         int left, right;
@@ -27,7 +28,7 @@ public class TripleSum15 {
 
             left = i + 1;
             right = nums.length - 1;
-            //是大于而不是大于等于，若right==left那么就变成两个元素了
+            //是大于而不是大于等于，若right==left那么最后就变成两个元素了，找不到三个元素了
             while (right > left){
                 int sum = nums[i] + nums[left] + nums[right];
                 if (sum > 0){
@@ -40,6 +41,7 @@ public class TripleSum15 {
                     while (right > left && nums[right] == nums[right - 1]) right--;
                     while (right > left && nums[left] == nums[left + 1]) left++;
 
+                    //去重完成之后移动指针
                     right--;
                     left++;
                 }

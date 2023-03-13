@@ -3,7 +3,7 @@ package HashTable;
 import java.util.HashMap;
 import java.util.Map;
 
-public class QuadSum454 {
+public class QuadSumCount454 {
     /**哈希表部分第4题 四数相加
      * 给你四个整数数组 nums1、nums2、nums3 和 nums4 ，数组长度都是 n ，请你计算有多少个元组 (i, j, k, l) 能满足：
      * 0 <= i, j, k, l < n
@@ -34,6 +34,7 @@ public class QuadSum454 {
                 //求相反数，看是否出现过
                 int reverse = -(i + j);
                 if(map.containsKey(reverse)){
+                    //若出现过，则加上出现的次数，而不是加1
                     res += map.get(reverse);
                 }
             }
