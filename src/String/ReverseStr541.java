@@ -28,6 +28,7 @@ public class ReverseStr541 {
         int left = start;
         int right = end;
         while (left < right){
+            //swap left和right
             char temp = charStr[left];
             charStr[left] = charStr[right];
             charStr[right] = temp;
