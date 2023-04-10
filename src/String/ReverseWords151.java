@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class ReverseWords151 {
     /**
+     * 字符串部分第3题
      * 给你一个字符串 s ，请你反转字符串中 单词 的顺序。
      * 单词 是由非空格字符组成的字符串。s 中使用至少一个空格将字符串中的 单词 分隔开。
      * 返回 单词 顺序颠倒且 单词 之间用单个空格连接的结果字符串。
@@ -19,10 +20,15 @@ public class ReverseWords151 {
         return new String(chars);
     }
 
+    /**
+     * 移除字符串中的空格，利用快慢指针法
+     * @param chars char数组
+     * */
     public static char[] removeSpaces(char[] chars) {
         //快慢指针, 快指针找非空元素，慢指针记录位置
         int slow = 0;
         for (int fast = 0; fast < chars.length; fast++) {
+            //若fast位置非空
             if (chars[fast] != ' ') {
                 //若slow不在初始位置，则在两个单词之间加上空格
                 //若slow在初始位置，则直接赋值
@@ -30,7 +36,7 @@ public class ReverseWords151 {
                     chars[slow] = ' ';
                     slow++;
                 }
-                //当快指针找到(连续)非空元素时，赋值给慢指针
+                //当快指针找到(连续则是while)非空元素时，赋值给慢指针
                 while (fast < chars.length && chars[fast] != ' ') {
                     chars[slow] = chars[fast];
                     slow++;
@@ -38,11 +44,16 @@ public class ReverseWords151 {
                 }
             }
         }
+        //相当于resize，创建新的char数组，长度为slow
         char[] newChars = new char[slow];
         System.arraycopy(chars, 0, newChars, 0, slow);
         return newChars;
     }
 
+    /**
+     * 反转字符串中的单词
+     * @param chars 为处理好的字符串，每个单词之间仅有一个空格
+     * */
     public static void reverseEachWord(char[] chars) {
         int start = 0;
         for (int end = 0; end < chars.length; end++) {
@@ -58,6 +69,12 @@ public class ReverseWords151 {
         }
     }
 
+    /**
+     * 反转start到end之间的字符串
+     * @param chars char数组
+     * @param start 起始位置下标
+     * @param end 终止位置下标
+     * */
     public static void reverse(char[] chars, int start, int end){
         int left = start;
         int right = end;
