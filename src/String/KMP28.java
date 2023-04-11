@@ -23,7 +23,8 @@ public class KMP28 {
             if (haystack.charAt(i) == needle.charAt(j)) {
                 j++;
             }
-            //若j等于needle的长度，即找到了这样一个字串，则返回i减去字串长度+1的位置
+            //若j等于needle的长度，即找到了这样一个字串
+            // 则返回i减去字串长度+1的位置，即子串在主串种的起始位置
             if (j == needle.length()) {
                 return (i - needle.length() + 1);
             }
@@ -39,7 +40,7 @@ public class KMP28 {
     int[] getNext(char[] s) {
         int[] next = new int[s.length];
         int j = 0;
-
+        //从1开始，next[0]为0
         for (int i = 1; i < s.length; i++) {
             //前后缀不相同的情况
             //j连续回退，所以是while
@@ -50,7 +51,7 @@ public class KMP28 {
             if (s[i] == s[j]) {
                 j++;
             }
-            //next赋值
+            //next赋值，j是最长相等前后缀的长度
             next[i] = j;
         }
 
