@@ -2,13 +2,13 @@ package String;
 
 import java.util.Scanner;
 
+/**
+ * 字符串部分第4题，KMP算法
+ * 给定一个子串，判断在另一个字符串中是否出现该子串，若出现则返回出现的下标
+ * 给你两个字符串haystack 和 needle ，请你在 haystack 字符串中找出 needle 字符串的第一个匹配项的下标（下标从 0 开始）。
+ * 如果needle 不是 haystack 的一部分，则返回-1 。
+ * */
 public class KMP28 {
-    /**
-     * 字符串部分第4题，KMP算法
-     * 给定一个子串，判断在另一个字符串中是否出现该子串，若出现则返回出现的下标
-     * 给你两个字符串haystack 和 needle ，请你在 haystack 字符串中找出 needle 字符串的第一个匹配项的下标（下标从 0 开始）。
-     * 如果needle 不是 haystack 的一部分，则返回-1 。
-     * */
     public int strStr(String haystack, String needle) {
         if (needle.length() == 0) {
             return 0;

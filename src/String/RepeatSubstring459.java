@@ -2,10 +2,10 @@ package String;
 
 import java.util.Scanner;
 
+/**
+ * 给定一个非空的字符串 s ，检查是否可以通过由它的一个子串重复多次构成。
+ * */
 public class RepeatSubstring459 {
-    /**
-     * 给定一个非空的字符串 s ，检查是否可以通过由它的一个子串重复多次构成。
-     * */
     public boolean repeatedSubstringPattern(String s) {
         //kmp思路，若是重复字符串，则最长相等前后缀不包含的部分就是重复的子串
         int[] next = getNext(s.toCharArray());
