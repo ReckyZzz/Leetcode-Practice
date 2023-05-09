@@ -1,9 +1,11 @@
 package Array;
 
+/**
+ * 数组部分第4题，209.长度最小的子数组
+ * 给定一个含有 n 个正整数的数组和一个正整数 target 。
+ * 找出该数组中满足其和 ≥ target 的长度最小的 连续子数组，并返回其长度，若不存在符合条件的子数组，返回0
+ * */
 public class MinSubArray209 {
-    //数组部分第4题
-    //209.给定一个含有 n 个正整数的数组和一个正整数 target 。
-    //找出该数组中满足其和 ≥ target 的长度最小的 连续子数组，并返回其长度，若不存在符合条件的子数组，返回0
     int minSubArray(int target, int[] nums){
         //滑动窗口方式，使用left和right之间的元素和，left为窗口尾部，right为窗口起始
         int sum = 0;

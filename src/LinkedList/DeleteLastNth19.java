@@ -1,9 +1,9 @@
 package LinkedList;
 
+/**链表部分第5题，19.删除链表的倒数第N个节点
+ * 给你一个链表，删除链表的倒数第 n 个结点，并且返回链表的头结点。
+ * */
 public class DeleteLastNth19 {
-    /**链表部分第5题
-     * 给你一个链表，删除链表的倒数第 n 个结点，并且返回链表的头结点。
-     * */
 
     public ListNode remove(ListNode head, int n){
         //快慢指针，快指针先走n+1步，当快指针指向null时，慢指针指向倒数第n+1个节点

@@ -3,11 +3,11 @@ package HashTable;
 import java.util.HashSet;
 import java.util.Set;
 
+/**哈希表部分第2题，349.两个数组的交集
+ * 给定两个数组 nums1 和 nums2 ，返回 它们的交集 。
+ * 输出结果中的每个元素一定是 唯一 的。我们可以 不考虑输出结果的顺序 。
+ * */
 public class ArrayIntersect349 {
-    /**哈希表部分第2题
-     * 给定两个数组 nums1 和 nums2 ，返回 它们的交集 。
-     * 输出结果中的每个元素一定是 唯一 的。我们可以 不考虑输出结果的顺序 。
-     * */
     int[] intersection(int[] nums1, int[] nums2){
         Set<Integer> numSet = new HashSet<>();
         Set<Integer> result = new HashSet<>();

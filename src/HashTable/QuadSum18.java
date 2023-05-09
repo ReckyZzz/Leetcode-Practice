@@ -4,13 +4,15 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * 18.三数之和
+ * 给你一个由 n 个整数组成的数组nums ，和一个目标值 target 。请你找出并返回满足下述全部条件且不重复的四元组
+ * [nums[a], nums[b], nums[c], nums[d]]（若两个四元组元素一一对应，则认为两个四元组重复）：
+ * 0 <= a, b, c, d< n
+ * a、b、c 和 d 互不相同
+ * nums[a] + nums[b] + nums[c] + nums[d] == target
+ * */
 public class QuadSum18 {
-    /**给你一个由 n 个整数组成的数组nums ，和一个目标值 target 。请你找出并返回满足下述全部条件且不重复的四元组
-     * [nums[a], nums[b], nums[c], nums[d]]（若两个四元组元素一一对应，则认为两个四元组重复）：
-     * 0 <= a, b, c, d< n
-     * a、b、c 和 d 互不相同
-     * nums[a] + nums[b] + nums[c] + nums[d] == target
-     * */
     public List<List<Integer>> fourSum(int[] nums, int target){
         //和三数之和不同，target可以指定为负数，因此剪枝条件需要改变
         //思路还是双指针法，但是需要多加一层循环，最外层为i，里面为j，left和right和三数之和中的相同

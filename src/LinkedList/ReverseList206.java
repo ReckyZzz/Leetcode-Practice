@@ -1,10 +1,10 @@
 package LinkedList;
 
+/**链表部分第3题，206.反转链表
+ * 反转链表
+ * 给你单链表的头节点 head ，请你反转链表，并返回反转后的链表。
+ * */
 public class ReverseList206 {
-    /**链表部分第3题
-     * 反转链表
-     * 给你单链表的头节点 head ，请你反转链表，并返回反转后的链表。
-     * */
     public ListNode reverseList(ListNode head){
         //pre是cur之前一个节点，方便反转，cur是当前节点
         ListNode pre = null;

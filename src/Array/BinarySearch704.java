@@ -1,9 +1,12 @@
 package Array;
 
+/**
+ * 704.二分查找
+ * 数组部分第1题
+ * 704.给定一个 n 个元素有序的（升序）整型数组 nums 和一个目标值 target
+ * 写一个函数搜索 nums 中的 target，如果目标值存在返回下标，否则返回 -1
+ * */
 public class BinarySearch704 {
-    //数组部分第1题
-    //704.给定一个 n 个元素有序的（升序）整型数组 nums 和一个目标值 target
-    //写一个函数搜索 nums 中的 target，如果目标值存在返回下标，否则返回 -1
     public int mySearch(int[] nums, int target){
         int left = 0, right = nums.length;//左闭右开
         int mid = (left + right) / 2;

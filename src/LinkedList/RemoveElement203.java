@@ -3,10 +3,10 @@ package LinkedList;
 import java.sql.ResultSet;
 import java.util.List;
 
+/**203.链表部分第1题，203.移除链表元素
+ * 给你一个链表的头节点 head 和一个整数 val ，请你删除链表中所有满足 Node.val == val 的节点，并返回 新的头节点
+ * */
 public class RemoveElement203 {
-    /**203.链表部分第1题
-     * 给你一个链表的头节点 head 和一个整数 val ，请你删除链表中所有满足 Node.val == val 的节点，并返回 新的头节点
-     * */
     //常规方法
     public ListNode removeElements(ListNode head, int val){
         //先判断头节点是否是指定元素，若是则直接删除

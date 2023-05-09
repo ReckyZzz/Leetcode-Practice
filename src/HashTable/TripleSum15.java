@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**哈希表部分第5题，15.三数之和
+ * 给你一个整数数组 nums ，判断是否存在三元组 [nums[i], nums[j], nums[k]]
+ * 满足 i != j、i != k 且 j != k ，同时还满足 nums[i] + nums[j] + nums[k] == 0
+ * 请你返回所有和为 0 且不重复的三元组。
+ * 注意：答案中不可以包含重复的三元组。
+ * */
 public class TripleSum15 {
-    /**哈希表部分第5题 三数之和
-     * 给你一个整数数组 nums ，判断是否存在三元组 [nums[i], nums[j], nums[k]]
-     * 满足 i != j、i != k 且 j != k ，同时还满足 nums[i] + nums[j] + nums[k] == 0
-     * 请你返回所有和为 0 且不重复的三元组。
-     * 注意：答案中不可以包含重复的三元组。
-     * */
     public List<List<Integer>> threeSum(int[] nums) {
         //关键在于不重复，需要去重，a+b+c=0
         //使用双指针而不使用哈希表,left为index+1，right为数组末尾

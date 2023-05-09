@@ -3,12 +3,12 @@ package HashTable;
 import java.util.HashMap;
 import java.util.Map;
 
+/**哈希表部分第4题，454.四数相加II
+ * 给你四个整数数组 nums1、nums2、nums3 和 nums4 ，数组长度都是 n ，请你计算有多少个元组 (i, j, k, l) 能满足：
+ * 0 <= i, j, k, l < n
+ * nums1[i] + nums2[j] + nums3[k] + nums4[l] == 0
+ * */
 public class QuadSumCount454 {
-    /**哈希表部分第4题 四数相加
-     * 给你四个整数数组 nums1、nums2、nums3 和 nums4 ，数组长度都是 n ，请你计算有多少个元组 (i, j, k, l) 能满足：
-     * 0 <= i, j, k, l < n
-     * nums1[i] + nums2[j] + nums3[k] + nums4[l] == 0
-     * */
     public int fourSumCount(int[] nums1, int[] nums2, int[] nums3, int[] nums4){
         //将4个数组分为两组，前两个作为一组，后两个作为一组
         //前两个数组元素之和(a+b)放到map中（因为不仅要记录是否出现过，还要记录出现次数），后两个数组元素之和(c+d)放到map中
