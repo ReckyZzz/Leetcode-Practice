@@ -20,13 +20,14 @@ public class ValidCase20 {
         if (s.length() % 2 == 1)
             return false;
         for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) == '{') {
+            char cur = s.charAt(i);
+            if (cur == '{') {
                 stack.push('}');
-            } else if (s.charAt(i) == '(') {
+            } else if (cur == '(') {
                 stack.push(')');
-            } else if (s.charAt(i) == '[') {
+            } else if (cur == '[') {
                 stack.push(']');
-            } else if (stack.empty() || stack.peek() != s.charAt(i)) {
+            } else if (stack.empty() || stack.peek() != cur) {
                 //若栈为空，则是第3种情况，栈的左右括号都匹配完了，但是还有新元素
                 //若栈顶元素不等于当前元素，则是第2种情况
                 return false;
