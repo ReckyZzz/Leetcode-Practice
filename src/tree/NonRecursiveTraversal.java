@@ -15,6 +15,7 @@ public class NonRecursiveTraversal {
         Stack<TreeNode> stack = new Stack<>();
 
         //入栈的顺序为中、右、左
+        //出栈的顺序才能是中左右
         stack.push(root);
         while (!stack.empty()) {
             TreeNode node = stack.pop();
@@ -39,7 +40,7 @@ public class NonRecursiveTraversal {
         List<Integer> res = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();
 
-        //前序遍历为中左右，将顺序改为中右左
+        //前序遍历为中左右，将顺序颠倒：改为中右左
         //最后将得到的数组反转，就是后序遍历左右中
         stack.push(root);
         while (!stack.empty()) {
