@@ -1,7 +1,5 @@
 package greedy;
 
-import java.nio.file.Paths;
-
 /**
  * 134. 加油站
  *
